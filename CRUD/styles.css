@@ -1,0 +1,47 @@
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+body{
+     background: linear-gradient(to top, rgba(126,0,126,0), rgba(126,0,126,1))
+     }
+td {
+    padding: 10px;
+}
+body{
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #000000;
+}
+
+h2 {
+	color: #000000;
+}
+
+th{
+    padding: 15px;
+    color: #000000;
+    
+}
+
+input[type=text] {
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 14px;
+}
+
+.advancedSearchTextbox {
+    width: 300px;
+    margin-right: -4px;
+}

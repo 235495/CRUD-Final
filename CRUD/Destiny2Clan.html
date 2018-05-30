@@ -1,0 +1,64 @@
+<html lang="en">
+   <head>
+      <title>Destiny 2 Clan Manager</title>
+   </head>
+   <body style="background-color:#ffffff;">
+      <center>
+         <img src="Destiny2.png" width="400px" height="235px" >
+      </center>
+      <br>
+      <center>
+         <h2>Welcome to the Guardians of the Nine Non-Official Database!</h2>
+         <h3>An end will come, we will be there -Xur</h3>
+      </center>
+      <br>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send info to php file !-->
+            <input type='text' placeholder='Gamertag' name='Gamertag'>
+            <select id='select' name='MemberStatus'>
+                 <option value="Status in Clan" >Status in Clan</option>
+                 <option value="Member" >Member</option>
+                 <option value="Admin" >Admin</option>
+                 <option value="Co-Leader" >Co-Leader</option>
+                 <option value="Leader" >Leader</option>
+                 <option value="Founder" >Founder</option>
+            </select>
+           <select id='select' name='Years'>
+                 <option value="Clan Veterancy">Clan Veterancy</option>
+                 <option value="Less than a year">Less than a year</option>
+                 <option value="One year" >One year</option>
+                 <option value="Two years" >Two years</option>
+                 <option value="Three years" >Three years</option>
+            </select>
+            <select id='select' name='MainClass'>
+               <option value="Favorite Class" >Favorite Class</option>
+               <option value="Titan" >Titan</option>
+               <option value="Hunter" >Hunter</option>
+               <option value="Warlock" >Warlock</option>
+            </select>
+            <select id='select' name='MainSubclass'>
+               <option value="Favorite Subclass" >Favorite Subclass</option>
+               <option value="Arc" >Arc</option>
+               <option value="Solar" >Solar</option>
+               <option value="Void" >Void</option>
+            </select>
+            <input type='text' placeholder='Additional Info' name='Additional'>
+            <input name = 'create' type = 'submit' value = 'Submit Info'
+           <input name = 'update' type = 'submit' value = 'Update Info'>  
+         </form>
+         
+         Look at other clan members statuses
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='MemberStatus'>
+               <option value="Member" >Member</option>
+               <option value="Admin" >Admin</option>
+               <option value="Co-Leader" >Co-Leader</option>
+               <option value="Leader" >Leader</option>
+               <option value="Founder" >Founder</option>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+         </form>
+      </center>
+   </body>
+</html>
